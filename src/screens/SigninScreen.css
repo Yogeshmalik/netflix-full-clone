@@ -1,0 +1,388 @@
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0 !important;
+}
+
+/* body {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.7)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/28b69a57-cadf-43d9-8a95-e5f2e11199de/7dea1af0-9df5-460a-83a8-c19445593cb4/DE-en-20221010-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  margin: 0;
+  background-size: cover;
+} */
+
+a,
+li {
+  text-decoration: none;
+  color: #737373;
+  display: flex;
+}
+
+.signinScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.7)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/28b69a57-cadf-43d9-8a95-e5f2e11199de/7dea1af0-9df5-460a-83a8-c19445593cb4/DE-en-20221010-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  margin: 0;
+}
+
+.Header {
+  height: 6.2em;
+  padding-bottom: 1%;
+  width: 100vw;
+  max-width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.02));
+  margin: 0 auto;
+}
+
+.Header .image {
+  max-width: 20%;
+  padding-left: 3%;
+  padding-top: 1.5em;
+  filter: brightness(1.1);
+}
+
+.Form {
+  background-color: rgba(0, 0, 0, 0.73);
+  color: #737373;
+  width: 28.2em;
+  max-width: 100%;
+  margin-bottom: 8%;
+  padding: 30px 68px 40px;
+  border-radius: 4px;
+}
+
+form {
+  padding-bottom: 19%;
+}
+
+.hero {
+  color: white;
+  text-align: left;
+}
+/* .error {
+    border-bottom: 2px solid #e87c03;
+    position: relative;
+  } */
+
+.errorMsg {
+  color: #e87c03;
+}
+
+.inputBox {
+  position: relative;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: 14px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 12px;
+  opacity: 1;
+}
+
+.inputText {
+  font-size: 14px;
+  width: 100%;
+  height: 35px;
+  outline: none;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 25px;
+  transition: 0.2s ease all;
+  border: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button {
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 4px;
+  height: 50px;
+  line-height: 50px;
+}
+
+input {
+  background: #333;
+  color: white;
+  margin: 8.5px auto;
+  font-weight: 500;
+  padding: 16px 20px 0;
+}
+
+.signin__button {
+  background: #e50914;
+  color: white;
+  font-weight: bold;
+  margin-top: 10%;
+  margin-bottom: -3px;
+  padding: 1.02em 1.2rem;
+  line-height: 0px;
+  cursor: pointer;
+}
+
+.signin__button:hover {
+  background-color: brown;
+  transition-duration: 250ms;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.remember {
+  display: block;
+  position: relative;
+  padding-top: 19px;
+  padding-left: 20px;
+  font-size: 13.5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #b3b3b3;
+}
+
+/* Hide the browser's default checkbox */
+.remember input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #737373;
+}
+
+/* When the checkbox is checked, add a blue background */
+.remember input:checked ~ .checkmark {
+  background-color: #ffffff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.remember input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.remember .checkmark:after {
+  left: 5px;
+  top: 0;
+  width: 4px;
+  height: 9px;
+  border: solid #333;
+  border-width: 0 3px 3.5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.remem-help {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.remem-help a {
+  display: flex;
+  color: #b3b3b3;
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.form-bottom {
+  padding-bottom: 5em;
+  margin-bottom: 3px;
+}
+
+.signupnow p {
+  display: flex;
+  width: 100%;
+}
+
+.signupnow p a {
+  color: white;
+  padding-left: 3px;
+}
+
+.recaptcha p {
+  font-size: smaller;
+  color: #8c8c8c;
+}
+
+.recaptcha a {
+  display: inline;
+  width: 100%;
+  font-size: small;
+  /* margin-top: -2px; */
+}
+
+.recaptcha a {
+  color: blue;
+}
+
+.Footer,
+footer {
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  max-width: 100%;
+  color: #737373;
+  padding-bottom: 20px;
+}
+
+.call p {
+  margin: 0;
+}
+
+.call a {
+  display: inline;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 0.3em;
+}
+
+.wrapper {
+  padding: 30px 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+ul {
+  margin-left: 0;
+  width: 100%;
+  padding: 0;
+  padding-top: 13px;
+}
+
+ul li {
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 100px;
+  margin-bottom: 16px;
+  padding: 0 12px 0 0;
+  width: 25%;
+  font-size: smaller;
+}
+
+.lang-cont {
+  width: 7.5em;
+  padding-right: 2px;
+}
+
+.lang {
+  color: #737373;
+  background-color: #000;
+  border: 1px solid #333;
+  border-radius: 2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 3.4em;
+  width: 100%;
+}
+
+.globe {
+  filter: invert(50%);
+  height: 37px;
+  width: auto;
+  position: absolute;
+  padding: 16px 0px 2px 14px;
+}
+
+@media (max-width: 750px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: black;
+  }
+
+  .Header {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    box-sizing: content-box;
+  }
+
+  .Header .image {
+    height: 2rem;
+    padding-top: 1.2em;
+    padding-bottom: 1.5em;
+    width: 100%;
+  }
+
+  .image img {
+    height: 1.27em;
+  }
+
+  .Form {
+    padding: 0 1.2em;
+  }
+
+  form {
+    padding-bottom: 1px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    font-size: 14.5px;
+    padding: 1.13em 1.2rem;
+  }
+
+  .form-bottom {
+    padding: 0;
+    padding-top: 0.8rem;
+    padding-bottom: 4.5rem;
+    margin: 0;
+  }
+
+  .signupnow p {
+    margin-bottom: 0.5px;
+  }
+
+  .recaptcha {
+    margin: 0;
+    padding-bottom: 2px;
+  }
+
+  .divider {
+    height: 2px;
+    background-color: #333;
+  }
+
+  ul li {
+    width: 50%;
+    font-size: small;
+  }
+}
