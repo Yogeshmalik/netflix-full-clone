@@ -23,12 +23,12 @@ function App() {
             uid: userAuth.uid,
             email: userAuth.email,
           })
-          );
-          console.log("Logged In", userAuth);
+        );
+        console.log("Logged In", userAuth);
       } else {
         // logged out. if we logged out it'll set user back to null
         dispatch(logout());
-        console.log("logout", userAuth)
+        console.log("logout", userAuth);
       }
     });
     return unsubscribe;
