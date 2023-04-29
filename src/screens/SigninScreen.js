@@ -1,9 +1,38 @@
-import React from "react";
+import React, { useRef } from "react";
+import { auth, firebase } from "../firebase";
 import "./SigninScreen.css";
 
 function SigninScreen() {
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
+
   const register = (e) => {
     e.preventDefault();
+
+    auth
+      .createUserWithEmailAndPassword(
+        emailRef.current.value,
+        passwordRef.current.value
+      )
+      .then((authUser) => {
+        console.log(authUser);
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+
+  const signIn = (e) => {
+    e.preventDefault();
+    auth
+      .signInWithEmailAndPassword(
+        emailRef.current.value,
+        passwordRef.current.value
+      )
+      .then((authUser) => {
+        console.log(authUser);
+      })
+      .catch((error) => alert(error.message));
   };
 
   const Header = () => {
@@ -21,25 +50,6 @@ function SigninScreen() {
   };
 
   const Form = () => {
-    // function blurEmail() {
-    //   document.getElementById("email").style.borderBottom = "2px solid #e87c03";
-    //   document.getElementById("errorMsgEmail").innerHTML =
-    //     "Please enter a valid email address or phone number.";
-    // }
-    // function blurPass() {
-    //   document.getElementById("pass").style.borderBottom = "2px solid #e87c03";
-    //   document.getElementById("errorMsgPass").innerHTML =
-    //     "Your password must contain between 4 and 60 characters.";
-    // }
-
-    // function focusEmail() {
-    //   document.getElementById("email").style.borderBottom = "none";
-    //   document.getElementById("errorMsgEmail").innerHTML = "";
-    // }
-    // function focusPass() {
-    //   document.getElementById("pass").style.borderBottom = "none";
-    //   document.getElementById("errorMsgPass").innerHTML = "";
-    // }
     return (
       <div className="Form">
         <form>
@@ -48,35 +58,25 @@ function SigninScreen() {
             <input
               type="text"
               id="email"
-              class="inputText error"
+              className="inputText error"
               required
-              //   onFocus={focusEmail}
-              //   onBlur={blurEmail}
+              ref={emailRef}
             />
             <span className="floating-label">Email or phone number</span>
-            <span
-              id="errorMsgEmail"
-              //   onBlur={blurEmail}
-              className="errorMsg"
-            ></span>
+            <span id="errorMsgEmail" className="errorMsg"></span>
           </div>
           <div className="inputBox error">
             <input
+              type="password"
               id="pass"
-              //   onFocus={focusPass}
-              //   onBlur={blurPass}
-              type="text"
               className="inputText error"
               required
+              ref={passwordRef}
             />
             <span className="floating-label">Password</span>
-            <span
-              id="errorMsgPass"
-              //   onBlur={blurPass}
-              className="errorMsg"
-            ></span>
+            <span id="errorMsgPass" className="errorMsg"></span>
           </div>
-          <button className="signin__button" type="submit">
+          <button className="signin__button" type="submit" onClick={signIn}>
             Sign In
           </button>
           <br />
@@ -93,7 +93,10 @@ function SigninScreen() {
         <div className="form-bottom">
           <div className="signupnow">
             <p>
-              New to Netflix?<a href="#">Sign up now</a>
+              New to Netflix?
+              <a href="#" onClick={register}>
+                Sign up now
+              </a>
             </p>
           </div>
           <div className="recaptcha">
