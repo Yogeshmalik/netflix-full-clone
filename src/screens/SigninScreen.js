@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { auth, firebase } from "../firebase";
+import { auth } from "../firebase";
 import "./SigninScreen.css";
 
 function SigninScreen() {
@@ -86,7 +86,7 @@ function SigninScreen() {
               <span className="checkmark"></span>Remember me
             </label>
             <p>
-              <a href="#">Need help?</a>
+              <a>Need help?</a>
             </p>
           </div>
         </form>

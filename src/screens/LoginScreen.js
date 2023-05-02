@@ -32,13 +32,13 @@ function LoginScreen() {
                 membership.
               </h3>
               <div className="loginScreen__input">
-                <form action="">
+                <form>
                   <input type="email" placeholder="Email address" />
                   <button
                     onClick={() => setSignIn(true)}
                     className="loginScreen__getStarted"
                   >
-                    Get Started >
+                    Get Started &gt;
                   </button>
                 </form>
               </div>

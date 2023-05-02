@@ -3,7 +3,8 @@
   top: 0;
   width: 100%;
   padding: 20px;
-  height: 30px;
+  /* height: 30px; */
+  height: 3.8rem;
   z-index: 1;
 
   display: flex;
@@ -22,10 +23,12 @@
   left: 20px;
   width: 80px;
   object-fit: contain;
+  cursor: pointer;
 }
 .nav_avatar {
   position: fixed;
   right: 20px;
   width: 30px;
   object-fit: contain;
+  cursor: pointer;
 }

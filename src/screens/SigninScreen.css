@@ -103,7 +103,7 @@ input:not(:focus):valid ~ .floating-label {
 input[type="text"],
 input[type="password"],
 input[type="email"],
-button {
+.signin__button {
   border: none;
   font-size: 16px;
   width: 100%;
