@@ -62,3 +62,29 @@
   border: none;
   cursor: pointer;
 }
+
+/* Media Query */
+
+@media (max-width: 750px) {
+  .profileScreen__body {
+    width: auto;
+    padding-top: 8rem;
+    padding-left: ;
+  }
+  .profileScreen__info .profileScreen__avatar {
+    height: 3.5rem;
+    margin-bottom: 10px;
+  }
+  .profileScreen__body h1 {
+    font-size: 2.5rem;
+  }
+  .profileScreen__info {
+    display: block;
+  }
+  .profileScreen__details {
+    margin-left: 0;
+  }
+  .profileScreen__details h2 {
+    padding: 10px 19px;
+  }
+}

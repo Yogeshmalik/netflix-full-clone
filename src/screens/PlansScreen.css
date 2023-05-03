@@ -27,3 +27,15 @@
 .planScreen__plan--disabled button {
   background-color: gray !important;
 }
+
+/* Media Query */
+
+@media (max-width: 750px) {
+  .planScreen__plan button {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+  .planScreen__plan {
+    font-size: 1.3rem;
+  }
+}

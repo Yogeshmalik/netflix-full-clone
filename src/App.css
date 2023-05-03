@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  letter-spacing: 0 !important;
 }
 
 .app {
@@ -8,7 +9,7 @@
   width: 100%;
   height: auto;
   font-family: Roboto, Ubuntu, sans-serif;
- }
+}
 .loginScreen__app {
   /* height: 100%; */
 }

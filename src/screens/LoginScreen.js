@@ -24,8 +24,8 @@ function LoginScreen() {
             </button>
           </div>
           <div className="loginScreen__body">
-            <>
-              <h1>Unlimited movies, TV shows and more.</h1>
+            <div className="loginScreen__hero">
+              <h1>Unlimited movies, TV shows and more</h1>
               <h2>Watch anywhere. Cancle anytime.</h2>
               <h3>
                 Ready to watch? Enter your email to create or restart your
@@ -42,7 +42,7 @@ function LoginScreen() {
                   </button>
                 </form>
               </div>
-            </>
+            </div>
           </div>
         </div>
       )}

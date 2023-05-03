@@ -7,7 +7,7 @@ import "./HomeScreen.css";
 
 function HomeScreen() {
   return (
-    <div>
+    <div className="homeScreen">
       <Nav />
       <Banner />
       <Row

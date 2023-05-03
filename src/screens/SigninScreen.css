@@ -320,8 +320,9 @@ ul li {
 }
 
 @media (max-width: 750px) {
-  * {
-    box-sizing: border-box;
+  .signinScreen {
+    background: #000;
+    margin: 0 auto;
   }
 
   body {
@@ -330,9 +331,8 @@ ul li {
 
   .Header {
     margin: 0;
-    padding: 0;
+    padding-bottom: 1.8rem;
     height: auto;
-    box-sizing: content-box;
   }
 
   .Header .image {
@@ -348,28 +348,34 @@ ul li {
 
   .Form {
     padding: 0 1.2em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   form {
-    padding-bottom: 1px;
+    padding-bottom: 0.5rem;
   }
 
-  input[type="text"],
-  input[type="password"],
-  input[type="email"] {
+  .signinScreen input[type="text"],
+  .signinScreen input[type="password"],
+  .signinScreen input[type="email"] {
     font-size: 14.5px;
     padding: 1.13em 1.2rem;
   }
-
+  .Form h1 {
+    padding-bottom: 1rem;
+  }
+  .remem-help {
+    padding-bottom: 1.3rem;
+  }
   .form-bottom {
     padding: 0;
     padding-top: 0.8rem;
     padding-bottom: 4.5rem;
     margin: 0;
   }
-
   .signupnow p {
-    margin-bottom: 0.5px;
+    margin-bottom: 1.3rem;
   }
 
   .recaptcha {
@@ -378,10 +384,12 @@ ul li {
   }
 
   .divider {
-    height: 2px;
+    height: 0.3rem;
     background-color: #333;
   }
-
+  .signinScreen .call {
+    padding-bottom: 1rem;
+  }
   ul li {
     width: 50%;
     font-size: small;

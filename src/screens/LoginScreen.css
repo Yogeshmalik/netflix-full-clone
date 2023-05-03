@@ -120,35 +120,51 @@
 
 /* MEDIA */
 @media (max-width: 750px) {
+  .loginScreen {
+    height: 100vh;
+  }
+
   .loginScreen__background {
-    /* padding: 10px 80px; */
+    padding-top: 0.4rem;
   }
   .loginScreen__logo,
   .loginScreen__button {
-    /* margin-top: 10px; */
+    margin-top: 0;
   }
 
   .loginScreen__logo {
     width: 130px;
+    padding-left: 0.6rem;
   }
   .loginScreen__button {
-    margin-right: 1.5rem;
+    margin-right: 1.2rem;
   }
 
   .loginScreen__body {
-    padding: 4.75rem 4rem 0 4rem;
+    padding: 3.75rem 2.5rem 0 2.5rem;
   }
-
+  .loginScreen__hero {
+    display: flex;
+    flex-direction: column;
+  }
   .loginScreen__body h1 {
-    font-size: 2.255rem;
+    font-size: 2.33rem;
+    font-weight: 700;
+    margin: 0.67em 0;
+    max-width: 95%;
   }
   .loginScreen__body h2 {
     font-size: 1.135rem;
   }
   .loginScreen__body h3 {
     font-size: 1.135rem;
+    max-width: 100%;
   }
   .loginScreen__input form input {
-    width: 60%;
+    width: 100%;
+  }
+  .loginScreen__body .loginScreen__input button {
+    /* display: block; */
+    margin-left: 0;
   }
 }
