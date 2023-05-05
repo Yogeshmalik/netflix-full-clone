@@ -34,11 +34,11 @@ PropTypes for type checking.
 
 ## Installation and Usage
 
-Clone the repository to your local machine using git clone https://github.com/Yogeshmalik/netflix-full-clone.git
-Navigate to the project directory using cd netflix-full-clone
-Install the dependencies using `npm install`
-Start the application using `npm start`
-Open http://localhost:3000 to view the app in your browser.
+Clone the repository to your local machine using git clone https://github.com/Yogeshmalik/netflix-full-clone.git  
+Navigate to the project directory using cd netflix-full-clone  
+Install the dependencies using `npm install`  
+Start the application using `npm start`  
+Open http://localhost:3000 to view the app in your browser.  
 
 ## Credits
 
