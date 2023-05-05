@@ -356,11 +356,17 @@ ul li {
     padding-bottom: 0.5rem;
   }
 
+  input:focus ~ .floating-label,
+  input:not(:focus):valid ~ .floating-label {
+    top: 13px;
+  }
+
   .signinScreen input[type="text"],
   .signinScreen input[type="password"],
   .signinScreen input[type="email"] {
     font-size: 14.5px;
-    padding: 1.13em 1.2rem;
+    padding: 1.13em 1.29rem;
+    padding-top: 1.5rem;
   }
   .Form h1 {
     padding-bottom: 1rem;

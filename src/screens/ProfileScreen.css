@@ -9,7 +9,7 @@
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  padding: 8%;
+  padding: 8% 14% 8% 2%;
   max-width: 800px;
 }
 
@@ -68,9 +68,10 @@
 @media (max-width: 750px) {
   .profileScreen__body {
     width: auto;
+    padding: 8%;
     padding-top: 8rem;
-    padding-left: ;
   }
+
   .profileScreen__info .profileScreen__avatar {
     height: 3.5rem;
     margin-bottom: 10px;
