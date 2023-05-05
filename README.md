@@ -11,13 +11,21 @@ You can view the live demo of the project [HERE](https://netflix-full-clone-ysm.
 The following technologies were used to build this project:
 
 React (Frontend library)
+
 Firebase (Backend as a service)
+
 Stripe (Payment processing)
+
 Redux (State management)
+
 React Hooks (Functionality)
+
 Cloud Firestore (Database)
+
 React Router (Navigation)
+
 PropTypes (Type checking)
+
 CSS3 (Styling)
 
 ## Features
@@ -25,19 +33,26 @@ CSS3 (Styling)
 This project includes the following features:
 
 User authentication and registration using Firebase Authentication.
+
 Responsive design using CSS3 and React Hooks.
+
 Integration with the Stripe API for payment processing.
+
 Integration with Cloud Firestore for storing data.
+
 Redux for state management.
+
 React Router for navigation.
+
 PropTypes for type checking.
+
 
 ## Installation and Usage
 
 Clone the repository to your local machine using git clone https://github.com/Yogeshmalik/netflix-full-clone.git
 Navigate to the project directory using cd netflix-full-clone
-Install the dependencies using ### `npm install`
-Start the application using ### `npm start`
+Install the dependencies using `npm install`
+Start the application using `npm start`
 Open http://localhost:3000 to view the app in your browser.
 
 ## Credits
