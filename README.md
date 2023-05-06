@@ -6,7 +6,8 @@ This is a clone of the Netflix website, built using React, Firebase, Stripe, Red
 
 You can view the live demo of the project [HERE](https://netflix-full-clone-ysm.firebaseapp.com/) .
 
-## Steps
+## Steps  
+
 Click on `Getstarted` or `Sign In` button on Home Screen  
 Enter any email and password and click on `Sign up now`  
 Again enter your details and click on `Sign In` Button  
@@ -15,6 +16,9 @@ Change or Choose plans by clicking `Subscribe` button
 You can use given(4242 4242 4242 4242 04/24 424) fake credit/debit card info for `Stripe` Payments  
 Click on `Netflix` logo on top left corner for the Movies Screen  
 Trailers are not available for every movie but for a few  
+
+## GIF View  
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/14905121/236620272-eddc2ee2-9bf5-4645-914a-ab77b420036a.gif)
 
 ## Technologies Used
 
