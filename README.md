@@ -20,6 +20,8 @@ Trailers are not available for every movie but for a few
 ## GIF View  
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/14905121/236620272-eddc2ee2-9bf5-4645-914a-ab77b420036a.gif)
 
+## My blog on this: [Full-Stack Netflix Clone](https://medium.com/@ballerbytes/8a35e23d5db0)
+
 ## Technologies Used
 
 The following technologies were used to build this project:
